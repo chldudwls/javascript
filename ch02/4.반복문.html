@@ -15,24 +15,24 @@
 
     <h4>for</h4>
     <script>
+        //for
         for(let i=1; i <=5; i++){
             document.write('i : ' + i + '<br>');
         }
         //1부터 10까지 합
         let sum = 0;
-        for(let a=1; a<=10; a++){
-           if()
-            let sum += a;
-            document.write(a + '<br>');
-        }
-        document.write('합계: ' + sum);
+        for(let k=1; k<=10; k++){
+                sum += a;
+           }
+        document.write('합계: ' + sum + '<br>');
         //1부터 10까지 짝수합
-
+    
         //별삼각형
     </script>
 
     <h4>while</h4>
     <script>
+        //while
         let total = 0;
         let k = 1;
 
@@ -40,26 +40,28 @@
             if(k % 2 ==0){
                 total += k;
             }
+            k++
         }
-        document.write('' + total + '<br>');
+        document.write('1부터 10까지 짝수합 : ' + total + '<br>');
         
-
+        //애~조ㅒㄷ
         let oddsum = 0;
         let j = 1;
 
 
         do{
-    if(j % 2 == 1){
-        oddsum += j;
 
-    }
-    j++
+            if(j % 2 == 1){
+                oddsum += j;
+
+        }   
+            j++
         
 
         }while(j <= 10);
 
-        document.write(''+ oddsum + '<br>');
-
+        document.write('1부터 10까지 홀수합 : ' + oddsum + '<br>');
+        //break
         let num =1;
 
         while(true){
@@ -68,7 +70,7 @@
             }
             num++;
         }
-        document.write(''+ num + '<br>');
+        document.write('5와 7의 최소 공배수 : ' + num + '<br>');
 
         //continue
         let tot = 0;
@@ -78,13 +80,33 @@
             }
             tot += 1;
         }
-        document.write(''+ tot + '<br>');
+        document.write('1부터 10까지 짝수합 : ' + tot + '<br>');
     </script>
     
     <h4>구구단</h4>
-    <script>
-        
-
-    </script>
+    
+    <table border="1">
+        <tr>
+            <th>2단</th>
+            <th>3단</th>
+            <th>4단</th>
+            <th>5단</th>
+            <th>6단</th>
+            <th>7단</th>
+            <th>8단</th>
+            <th>9단</th>
+        </tr>
+        <script>
+            for(let x = 1; x <= 9; x++){
+                    document.write('<tr>');
+                    for(let y =2; y <= 9; y++){
+                        let z = x * y;
+                        
+                        document.write('<td>' + y + ' x '+ x + ' = ' + z + '</td>');
+                }
+                document.write('</tr>');
+            }
+        </script>
+    </table>
 </body>
 </html>
